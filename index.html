@@ -27,11 +27,13 @@
     .navbar-light .navbar-nav .nav-link:hover {
       color: orangered; /* Change the color of the links on hover to orange */
     }
-    .card{
+    .border-none{
      /* border-color: rgb(222, 155, 131); */
      border :none;
     }
-
+    .card{
+      border-color: #3B7080;
+    }
     .larger-icon {
       font-size: 2rem; /* Adjust the size as needed */
     }
@@ -42,11 +44,18 @@
       font-size :x-large;
       font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
       color:black;
+      cursor: pointer;
     }
     .font-white{
       font-size :large;
       font-family: Arial, Helvetica, sans-serif; 
       color:white;
+    }
+    .font-projects{
+      font-size :x-large;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color:black;
+      cursor: pointer;
     }
     #github{
       color : black;
@@ -56,6 +65,7 @@
      }
     
   </style>
+
 </head>
 
 
@@ -97,7 +107,7 @@
       <img src="codingman-removebg.png" height="400" width="400" style ="border: none;">  
     </div>
     <div class="col-md-6">
-      <div class="card">
+      <div class="card border-none">
         <div class="card-body">
           <pre class="card-text font-black">
  Passionate Engineering graduate with a drive 
@@ -132,29 +142,118 @@
 <!-- Skill area begins-->
 
 <div class = "container" id ="skills">
+
+  <div class="row">
+
+    <div class="col-md-6">
+        
+        <button class="btn btn-outline btn-floating m-1" id ="c"><img src="c.png" width="80" height="80"></button> 
+
+        <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="java"><img src="java.png" width="80" height="80"></a> 
+
+        <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="csharp"><img src="c-sharp.png" width="80" height="80"></a> 
+         
+        <br><br>
+
+        <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="html"><img src="html-5.png" width="80" height="80"></a> 
+
+        <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="css"><img src="css-3.png" width="80" height="80"></a> 
+
+        <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="js"><img src="java-script.png" width="80" height="80"></a> 
+      
+        <br><br>
+
+        <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="sql"><img src="sql-server.png" width="80" height="80"></a> 
+
+        <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="reactjs"><img src="library.png" width="80" height="80"></a> 
+        
+    </div>
+
+    <div class="col-md-6">
+
+      <div class="card h-20" onmouseover="iskills()" onmouseout="dehighlightskills()">
+        <div class="card-body">
+          <span class="font-projects"><pre>Interview Automation Website                 <button type = "button" class = "btn btn-orange font-white">Brief</button></pre></span>        
+        </div>              
+      </div>
+   
+        
+        <br> 
+
+    <div class="card h-20" onmouseover="mskills()" onmouseout="dehighlightskills()">
+      <div class="card-body">
+        <span class="font-projects"><pre>Movie Ticket Booking Website                 <button type = "button" class = "btn btn-orange font-white">Brief</button></pre></span>      
+      </div>         
+    </div>
   
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="c.png" width="80" height="80"></a> 
 
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="java.png" width="80" height="80"></a> 
+    <br>
 
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="c-sharp.png" width="80" height="80"></a> 
-
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="html-5.png" width="80" height="80"></a> 
-
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="css-3.png" width="80" height="80"></a> 
-
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="java-script.png" width="80" height="80"></a> 
- 
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="sql-server.png" width="80" height="80"></a> 
-
-  <a class="btn btn-outline  btn-floating m-1" href="#!" role="button" id ="github"><img src="library.png" width="80" height="80"></a> 
-
+    <div class="card h-20" onmouseover="eskills()" onmouseout="dehighlightskills()">
+      <div class="card-body">
+        <span class="font-projects"><pre>Expense Manager Windows App                  <button type = "button" class = "btn btn-orange font-white">Brief</button></pre></span>      
+      </div>         
+    </div>
+  
+  </div>
 </div>
 
 </body>
 
 <script>
+     function iskills(){
+         let button1 = document.getElementById("java") ;
+         let button2= document.getElementById("html") ;
+         let button3= document.getElementById("css")  ;
+         let button4= document.getElementById("js") ;
+         let button5 = document.getElementById("sql") ;
 
+       //  button1.style.borderColor = 'orangered';
+         button2.style.borderColor = 'pink';
+         button3.style.borderColor = 'orangered';
+         button4.style.borderColor = 'orangered';
+         button5.style.borderColor = 'orangered';
+     }
+
+     function mskills(){
+         let button1 = document.getElementById("java") ;
+         let button2= document.getElementById("html") ;
+         let button3= document.getElementById("css")  ;
+         let button4= document.getElementById("js") ;
+         let button5 = document.getElementById("sql") ;
+
+         button1.style.borderColor = 'orangered';
+         button2.style.borderColor = 'green';
+         button3.style.borderColor = 'orangered';
+         button4.style.borderColor = 'orangered';
+         button5.style.borderColor = 'orangered';
+       
+     }
+
+     function eskills(){
+         let button = document.getElementById("c") ;
+         button.style.borderColor = 'orangered';
+     }
+
+     function dehighlightskills(){
+         let  button1 = document.getElementById("c") ;
+         let  button2 = document.getElementById("java") ;
+         let  button3 = document.getElementById("c#") ;
+         let  button4 = document.getElementById("html") ;
+         let  button5 = document.getElementById("css")  ;
+         let  button6 = document.getElementById("js") ;
+         let  button7 = document.getElementById("sql") ;
+         let  button8 = document.getElementById("reactjs") ;
+
+         button1.style.borderColor = 'white';
+         button2.style.borderColor = 'white';
+         button3.style.borderColor = 'white';
+         button4.style.borderColor = 'black';
+         button5.style.borderColor = 'pink';
+         button6.style.borderColor = 'white';
+         button7.style.borderColor = 'white';
+         button8.style.borderColor = 'white';
+     }
 </script>
 
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
